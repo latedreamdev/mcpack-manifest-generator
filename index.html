@@ -2,22 +2,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title appName>MCPack Manifest Generator</title>
-		<meta name="author" content="XiaozhiSans">
+		<meta name="author" content="LateDream">
 		<meta name="description" content="A generator to help developers create Minecraft: Bedrock Edition Pack Manifests">
-		<meta name="keywords" content="mcpack, manifest, minecraft addon, minecraft addons, mcaddon, MCPack Manifest Generator, MCPack 清单生成器">
-		<link rel="stylesheet" type="text/css" href="https://xsawa.dev.tc/ore-ui-web/dist/preload.css">
-		<link rel="manifest" href="manifest.json">
+		<meta name="keywords" content="mcpack, manifest, minecraft addon, minecraft addons, mcaddon, MCPack Manifest Generator">
+		<link rel="stylesheet" type="text/css" href="./assets/ore-ui-web/dist/preload.css">
+		<link rel="manifest" href="mcpack.webmanifest">
 
-		<meta name="mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="application-name" content="MCPack Manifest">
-		<meta name="apple-mobile-web-app-title" content="MCPack Manifest">
-		<meta name="background-color" content="#1e1e1f">
-		<meta name="theme-color" content="#e6e8eb">
-		<meta name="msapplication-navbutton-color" content="#e6e8eb">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<meta name="msapplication-starturl" content="/">
-		<meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<meta name="msvalidate.01" content="596A6714E6149ACBAFEC59929BDCACEC">
 
@@ -46,11 +37,11 @@
 		<sider>
 			<p><br></p>
 			<p><span appName></span> <span mcpackMv></span></p>
-			<p> by <a href="https://github.com/XiaozhiSans" target="_blank" rel="noopener">XiaozhiSans</a></p>
+			<p> by <a href="https://github.com/iLateDreami" target="_blank" rel="noopener">LateDream</a></p>
 			<p license></p>
 			<span class="flex">
-			<button type="button" onclick="window.open('https://github.com/XiaozhiSans/mcpack-manifest-generator/issues/new');" class="normal link" feedback></button><br>
-			<button type="button" onclick="window.open('https://github.com/XiaozhiSans/mcpack-manifest-generator');" class="normal link" github></button>
+			<button type="button" onclick="window.open('https://github.com/iLateDreami/mcpack-manifest-generator/issues/new');" class="normal link" feedback></button><br>
+			<button type="button" onclick="window.open('https://github.com/iLateDreami/mcpack-manifest-generator');" class="normal link" github></button>
 			</span>
 			<p linkExchange></p>
 			<span class="flex">
@@ -97,7 +88,7 @@
 					<button type="button" class="icon" onclick="cAS.save();" tooltip="Save"><i class="-icon -save"></i></button>
 					</span>
 				</span>
-				<input isUUID="false" id="result" readonly placeholder="Waiting for generation...">
+				<input id="result" readonly placeholder="Waiting for generation...">
 			</div>
 
 		<footer>
@@ -118,11 +109,16 @@
 
 		</main>
 
-
-		<a id="save" download="manifest.json" href="#" style="display: none;">invisible hand</a>
+		<script type="text/javascript">
+			(()=>{
+				const target = document.querySelector("footer span[js]");
+				target.textContent = "true";
+				target.style.color = "#0f0";
+			})();
+		</script>
 
 		<link rel="stylesheet" type="text/css" href="./assets/stylesheets/main.css">
-		<script defer type="module" src="https://xsawa.dev.tc/ore-ui-web/dist/all.init.js"></script>
+		<script defer type="module" src="./assets/ore-ui-web/dist/all.init.js"></script>
 		<script defer type="module" src="./assets/scripts/main.init.js"></script>
 	</body>
 </html>

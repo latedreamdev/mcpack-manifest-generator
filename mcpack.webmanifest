@@ -1,0 +1,19 @@
+{
+	"name": "MCPack Manifest Generator",
+	"description": "A generator to help developers create Minecraft: Bedrock Edition Pack Manifests",
+	"short_name": "MCPack Manf",
+	"start_url": "/",
+	"scope": "/",
+	"background_color": "#1e1e1f",
+	"theme_color": "#e6e8eb",
+	"display": "standalone",
+	"icons": [{
+		"src": "assets/icons/favicon.ico",
+		"sizes": "16x16 24x24",
+		"type": "image/x-icon"
+	},{
+		"src": "assets/icons/appicon.png",
+		"sizes": "144x144",
+		"type": "image/png"
+	}]
+}

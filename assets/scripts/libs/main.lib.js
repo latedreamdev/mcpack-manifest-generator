@@ -1,4 +1,4 @@
-globalThis.result = document.querySelector("#result");
+window.result = document.querySelector("#result");
 
 export const mcpackM = {
 	Manifest: function(name, description, version, minBedrockVersion, type) {
@@ -36,14 +36,14 @@ export const mcpackM = {
 			alert("min bedrock version is too low!!\nlowest: 1.8.0");
 			return;
 		}
-		result.setAttribute("isUUID", false);
+		result.toggleAttribute("isUUID");
 		result.value = (JSON.stringify(new this.Manifest(mcPackInfo.get("name"), mcPackInfo.get("description"), mcPackInfo.get("version"), mBv, mcPackInfo.get("type"))));
 		document.querySelector("#buttonPanel").style.display = "inline";
 		window.alert("success!");
 	},
 	version: {
-		number: [0, 2, 2],
-		build: "20240609",
+		number: [0, 2, 4],
+		build: "20241116",
 		name: "beta"
 	},
 	getVer() {
@@ -51,7 +51,7 @@ export const mcpackM = {
 		return `${version.name[0].toUpperCase() + version.name.slice(1)} v${version.number.join('.')}(${version.build})`;
 	},
 	getUUID() {
-		result.setAttribute("isUUID", true);
+		result.toggleAttribute("isUUID");
 		result.value = mcpackM.generateUUID();
 		document.querySelector("#buttonPanel").style.display = 'inline';
 	}

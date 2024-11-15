@@ -14,8 +14,7 @@ export default () => {
 		["mcpackMl", displayLang],
 		["oreuiI", (oreui)? true: false],
 		["oreuiV", `v${oreui.info.version}(${oreui.info.date})`],
-		["mcpackMv", mcpackM.getVer()],
-		["js", true]
+		["mcpackMv", mcpackM.getVer()]
 	];
 
 	info.forEach(i => {

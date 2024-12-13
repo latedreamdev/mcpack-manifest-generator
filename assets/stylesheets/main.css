@@ -17,6 +17,10 @@
 .flex {
 	align-items: stretch; flex-direction: column;
 }
+.tips {
+	font-size: 0.7em;
+	margin: 4px;
+}
 
 button.icon:not(header>button):is(:hover, :focus) {
 	background-color: unset;
@@ -32,6 +36,26 @@ noscript {
 noscript>content {
 	position: relative;
 	color: #fff;
+}
+code {
+	border-radius: 4px;
+	padding: 2px 4px;
+	margin: 2px;
+	background-color: #0004;
+	font-family: 'fira code', monospace;
+}
+details {
+	background-color: #0004;
+	outline: 2px solid #0006;
+}
+details[open]:hover {
+}
+details>*:not(summary) {
+	display: block;
+	margin-left: 10% !important;
+}
+details>input {
+	width: 80%;
 }
 sider {
 	width: calc(40vw);

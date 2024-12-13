@@ -37,15 +37,15 @@
 		<sider>
 			<p><br></p>
 			<p><span appName></span> <span mcpackMv></span></p>
-			<p> by <a href="https://github.com/iLateDreami" target="_blank" rel="noopener">LateDream</a></p>
+			<p> by <a href="https://github.com/latedreamdev" target="_blank" rel="noopener">LateDream</a></p>
 			<p license></p>
 			<span class="flex">
-			<button type="button" onclick="window.open('https://github.com/iLateDreami/mcpack-manifest-generator/issues/new');" class="normal link" feedback></button><br>
-			<button type="button" onclick="window.open('https://github.com/iLateDreami/mcpack-manifest-generator');" class="normal link" github></button>
+			<button type="button" onclick="window.open('https://github.com/latedreamdev/mcpack-manifest-generator/issues/new', '_blank', 'noopener,noreferrer');" class="normal link" feedback></button><br>
+			<button type="button" onclick="window.open('https://github.com/latedreamdev/mcpack-manifest-generator', '_blank', 'noopener,noreferrer');" class="normal link" github></button>
 			</span>
 			<p linkExchange></p>
 			<span class="flex">
-			<button type="button" onclick="window.open('https://mcisee.top');" class="normal skyblue link">MCiSEE</button>
+			<button type="button" onclick="window.open('https://mcisee.top', '_blank', 'noopener,noreferrer');" class="normal skyblue link">MCiSEE</button>
 			</span>
 		</sider>
 
@@ -73,6 +73,20 @@
 			<div class="box flex">
 				<span><h2 class="title" style="display: inline;">5.</h2>[*]<span packType></span></span>
 				<input name="type" type="text" required placeholder="E.g.: data">
+				<span class="tips"><i class="fa-solid fa-info-circle"></i><span packTypeTip></span></span>
+			</div>
+			<div class="box flex">
+				<span><h2 class="title" style="display: inline;">6.</h2><span packMeta></span></span>
+				<details class="flex">
+					<summary unfold></summary>
+					<label for="authors" packAuthors></label>
+					<input name="authors" type="text" placeholder="E.g.: LateDream" />
+					<span class="tips"><i class="fa-solid fa-info-circle"></i><span packAuthorsTip></span></span>
+					<label for="license" packLicense></label>
+					<input name="license" type="text" placeholder="E.g.: MIT" />
+					<label for="url" packUrl></label>
+					<input name="url" type="url" placeholder="E.g.: https://example.com/my-pack/" />
+				</details>
 			</div>
 			<div class="box flex" style="flex-direction: row; align-items: center;">
 				<button type="button" onclick="window.open('https://learn.microsoft.com/en/minecraft/creator/reference/content/addonsreference/examples/addonmanifest'); return false;" class="normal link" style="width: 280px;">Microsoft Learn<i class="fa-brands fa-microsoft"></i></button>

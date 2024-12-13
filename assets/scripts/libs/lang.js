@@ -1,4 +1,4 @@
-import languages from "./languages.json" with {type: "json"};
+// import languages from "./languages.json" with {type: "json"}; // chrome 128+
 // globalThis.languages = languages;
 
 export const lang = {
@@ -33,9 +33,11 @@ export const lang = {
 		date.setDate(date.getDate() + 7); // default expires is 7 days
 		document.cookie = `lang=${lang}; expires=${date}`;
 	},
-	setLang(langName) {
+	async setLang(langName) {
+		console.log('fetching language data');
+		const languages = await (await fetch('/i18n.json')).json();
 		console.log(`will use "${langName}" as display language`);
-		let displayLang = eval(`languages.${langName}`);
+		let displayLang = languages[langName];
 		document.querySelector("html").lang = langName;
 
 		displayLang.forEach(l => {

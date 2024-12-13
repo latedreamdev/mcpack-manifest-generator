@@ -9,13 +9,20 @@
 		["minBedrockVersion", "Min Bedrock Version:"],
 		["packType", "Pack Type:"],
 		["packTypeTip", "It can be: <code>data</code>(behavior pack) or <code>resource</code>(resource pack)"],
+		["packMeta", "Pack Metadata"],
+		["packAuthors", "Pack Authors:"],
+		["packAuthorsTip", "If there are multiple authors, separate them with commas, like this: <code>LateDream, Shiroko</code>"],
+		["packLicense", "Pack License:"],
+		["packUrl", "Pack URL:"],
 		["generateUUID", "Generate an UUID"],
 		["submit", "Let's go!"],
 		["result", "Result"],
 		["license", "This work is licensed under <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/ target=\"_blank\">CC BY-NC-SA 4.0</a>"],
 		["feedback", "Feedback<i class=\"fa-brands fa-github\"></i>"],
 		["github", "GitHub Repo<i class=\"fa-brands fa-github\"></i>"],
-		["linkExchange", "Link exchange"]
+		["linkExchange", "Link exchange"],
+		["fold", "Fold"],
+		["unfold", "Unfold"]
 	],
 	"zh": [
 		["translator", "XiaozhiSans"],
@@ -27,12 +34,19 @@
 		["minBedrockVersion", "要求基岩版最低版本:"],
 		["packType", "类型:"],
 		["packTypeTip", "可以是: <code>data</code>(行为包) 或 <code>resource</code>(资源包)"],
+		["packMeta", "元数据"],
+		["packAuthors", "作者:"],
+		["packAuthorsTip", "多个作者请用半角逗号隔开, 如: <code>LateDream, Shiroko</code>"],
+		["packLicense", "开源协议:"],
+		["packUrl", "项目链接:"],
 		["generateUUID", "生成一个 UUID"],
 		["submit", "启动!"],
 		["result", "结果"],
 		["license", "本作品 授权于 <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/ target=\"_blank\">CC BY-NC-SA 4.0</a>"],
 		["feedback", "问题反馈<i class=\"fa-brands fa-github\"></i>"],
 		["github", "查看源码<i class=\"fa-brands fa-github\"></i>"],
-		["linkExchange", "友链"]
+		["linkExchange", "友链"],
+		["fold", "折叠"],
+		["unfold", "展开"]
 	]
 }
